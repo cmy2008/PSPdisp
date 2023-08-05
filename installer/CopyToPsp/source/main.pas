@@ -117,7 +117,7 @@ procedure TMainForm.ChangePathClick(Sender: TObject);
 var
   Directory : String;
 begin
-  if (SelectDirectory('Select the path to the PSP game folder.', '', Directory)) then
+  if (SelectDirectory(#36873#25321#36335#24452#33267' PSP '#28216#25103#25991#20214#22841, '', Directory)) then
   begin
     if (DirectoryExists(Directory)) then
     begin

@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Copy PSPdisp game files to the PSP'
+  Caption = #22797#21046' PSPdisp '#28216#25103#25991#20214#21040' PSP'
   ClientHeight = 279
   ClientWidth = 431
   Color = clBtnFace
@@ -19,11 +19,9 @@ object MainForm: TMainForm
   object Label1: TLabel
     Left = 24
     Top = 94
-    Width = 359
+    Width = 349
     Height = 26
-    Caption = 
-      '3. The path to your game folder will be autodetected. If there a' +
-      're multiple folders they will all appear in the list below.'
+    Caption = '3. '#28216#25103#25991#20214#22841#30340#36335#24452#23558#33258#21160#26816#27979#12290#22914#26524#26377#22810#20010#25991#20214#22841#65292#23427#20204#23558#22312#19979#38754#30340#21015#34920#20013#21015#20986#12290
     WordWrap = True
   end
   object Label2: TLabel
@@ -32,45 +30,38 @@ object MainForm: TMainForm
     Width = 361
     Height = 17
     AutoSize = False
-    Caption = 
-      'This program will try to copy the PSPdisp game files to your PSP' +
-      '.'
+    Caption = #35813#31243#24207#23558#23581#35797#25226' PSPdisp '#28216#25103#25991#20214#22797#21046#21040#20320#30340' PSP'
     WordWrap = True
   end
   object Label3: TLabel
     Left = 24
     Top = 127
-    Width = 389
-    Height = 13
-    Caption = 
-      '4. Choose the non-1.5-kernel path, eg: P:\PSP\GAME5XX and press ' +
-      '"Copy Files".'
+    Width = 377
+    Height = 26
+    AutoSize = False
+    Caption = '4. '#36873#25321' non-1.5-kernel '#36335#24452#65292#20363#22914': P:\PSP\GAME5XX '#28982#21518#25353' "'#22797#21046#25991#20214'".'
     WordWrap = True
   end
   object Label4: TLabel
     Left = 24
     Top = 56
-    Width = 224
+    Width = 167
     Height = 13
-    Caption = '1. Connect your PSP with the PC through USB.'
+    Caption = '1. '#36830#25509#20320#30340' PSP '#21040#30005#33041#36890#36807' USB'
   end
   object Label5: TLabel
     Left = 24
     Top = 75
-    Width = 324
+    Width = 289
     Height = 13
-    Caption = 
-      '2. If not automatically done, choose "USB connection" on your PS' +
-      'P.'
+    Caption = '2.'#22914#26524#27809#26377#33258#21160#23436#25104#65292' '#36873#25321' "USB '#36830#25509'" '#22312#20320#30340' PSP '#19978#12290
   end
   object Label6: TLabel
     Left = 24
     Top = 146
-    Width = 372
+    Width = 377
     Height = 26
-    Caption = 
-      '5. If you don'#39't want to copy the files now, you can do it later ' +
-      'through a start menu link.'
+    Caption = '5.'#22914#26524#20320#19981#24819#29616#22312#22797#21046#25991#20214#65292#20320#21487#20197#31245#21518#36827#34892#25805#20316#36890#36807#24320#22987#33756#21333#24555#25463#26041#24335#12290
     WordWrap = True
   end
   object ChangePath: TButton
@@ -78,7 +69,7 @@ object MainForm: TMainForm
     Top = 197
     Width = 71
     Height = 21
-    Caption = 'Browse ...'
+    Caption = #27983#35272'...'
     TabOrder = 1
     OnClick = ChangePathClick
   end
@@ -87,7 +78,7 @@ object MainForm: TMainForm
     Top = 263
     Width = 145
     Height = 25
-    Caption = 'Try to autodetect again'
+    Caption = #20877#27425#23581#35797#33258#21160#26816#27979
     TabOrder = 2
     Visible = False
     OnClick = DetectClick
@@ -97,7 +88,7 @@ object MainForm: TMainForm
     Top = 240
     Width = 145
     Height = 25
-    Caption = 'Copy files'
+    Caption = #22797#21046#25991#20214
     Default = True
     TabOrder = 3
     OnClick = CopyClick
@@ -107,7 +98,7 @@ object MainForm: TMainForm
     Top = 240
     Width = 145
     Height = 25
-    Caption = 'Cancel'
+    Caption = #21462#28040
     TabOrder = 4
     OnClick = CancelClick
   end

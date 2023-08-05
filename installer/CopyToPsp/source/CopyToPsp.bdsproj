@@ -141,7 +141,7 @@
 		</Parameters>
 		<Language>
 			<Language Name="ActiveLang"></Language>
-			<Language Name="ProjectLang">$00000000</Language>
+			<Language Name="ProjectLang">$00000804</Language>
 			<Language Name="RootDir"></Language>
 		</Language>
 		<VersionInfo>
