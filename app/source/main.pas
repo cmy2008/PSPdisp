@@ -271,6 +271,7 @@ type
     SaveDialog: TSaveDialog;
     OptionsPresetsLoad: TButton;
     OptionsPresetsOpenFolder: TButton;
+    Label60: TLabel;
     procedure TimerTimer(Sender: TObject);
     procedure MenuUpdateClick(Sender: TObject);
     procedure MenuQualityClick(Sender: TObject);
@@ -335,6 +336,7 @@ type
     procedure ConfigTimerTimer(Sender: TObject);
     procedure OnModificationForConfig(Sender: TObject);
     procedure AboutVisitHomepageClick(Sender: TObject);
+    procedure AboutTranslatorClick(Sender: TObject);
     procedure OptionsQualityOnChange(Sender: TObject);
     procedure OptionsQualityResetClick(Sender: TObject);
     procedure OptionsQualityOnExit(Sender: TObject);
@@ -2249,6 +2251,11 @@ begin
   ShellExecute(Handle, 'open', 'http://www.jjs.at/redirect/pspdisp/v0.6', nil, nil, SW_SHOWNORMAL);
 end;
 
+procedure TMainForm.AboutTranslatorClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', 'https://space.bilibili.com/372836503', nil, nil, SW_SHOWNORMAL);
+end;
+
 
 
 {
@@ -2634,7 +2641,7 @@ begin
   end;
 
   OptionsPresetsList.Clear;
-  OptionsPresetsList.Items.Add('<new preset>');
+  OptionsPresetsList.Items.Add('<'#26032#39044#35774'>');
 
   PresetFiles := ConfigEnumPresetFiles();
 
@@ -2673,7 +2680,7 @@ begin
   OptionsPresetsDelete.Enabled := (OptionsPresetsList.ItemIndex > 0);
   OptionsPresetsLoad.Enabled := (OptionsPresetsList.ItemIndex > 0);
   if (OptionsPresetsList.ItemIndex = 0) then
-    OptionsPresetsName.Text := 'Please enter a name'
+    OptionsPresetsName.Text := #35831#36755#20837#25991#20214#21517
   else
     OptionsPresetsName.Text := PresetFiles[OptionsPresetsList.ItemIndex - 1].Name;
 end;

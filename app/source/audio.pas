@@ -119,12 +119,12 @@ var
 begin
   if Index = DisableAudioStreamingIndex then
   begin
-     Result := 'Disable audio streaming';
+     Result := #31105#29992#22768#38899#20018#27969;
   end
   else
   if Index = SoftwareLoopbackDeviceIndex then
   begin
-    Result := 'Software Loopback Device';
+    Result := #36719#20214#22238#29615#35774#22791' (Software Loopback Device) ';
   end
   else
   begin

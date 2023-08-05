@@ -125,20 +125,21 @@ object MainForm: TMainForm
     ActivePage = WlanTab
     TabOrder = 0
     object TabSheet1: TTabSheet
-      Caption = 'About'
+      Caption = #20851#20110
       object GroupBox1: TGroupBox
-        Left = 118
+        Left = 113
         Top = 191
         Width = 242
         Height = 105
-        Caption = 'Status'
+        Caption = #29366#24577
         TabOrder = 0
         object Label1: TLabel
           Left = 20
           Top = 21
-          Width = 90
+          Width = 101
           Height = 13
-          Caption = 'Frames per second'
+          AutoSize = False
+          Caption = #27599#31186#21047#26032#29575'(FPS)'
         end
         object AboutFps: TLabel
           Left = 158
@@ -150,9 +151,10 @@ object MainForm: TMainForm
         object Label9: TLabel
           Left = 20
           Top = 40
-          Width = 90
+          Width = 101
           Height = 13
-          Caption = 'Average frame size'
+          AutoSize = False
+          Caption = #24179#22343#24103#22823#23567
         end
         object AboutFrameSize: TLabel
           Left = 158
@@ -164,9 +166,10 @@ object MainForm: TMainForm
         object Label20: TLabel
           Left = 20
           Top = 59
-          Width = 81
+          Width = 101
           Height = 13
-          Caption = 'Total frames sent'
+          AutoSize = False
+          Caption = #24050#21457#36865#30340#24635#24103#25968
         end
         object AboutTotalFrames: TLabel
           Left = 158
@@ -178,9 +181,10 @@ object MainForm: TMainForm
         object Label22: TLabel
           Left = 20
           Top = 78
-          Width = 85
+          Width = 117
           Height = 13
-          Caption = 'Total amount sent'
+          AutoSize = False
+          Caption = #24050#21457#36865#24103#30340#24635#22823#23567
         end
         object AboutTotalBytesSent: TLabel
           Left = 158
@@ -221,9 +225,9 @@ object MainForm: TMainForm
         object Label6: TLabel
           Left = 134
           Top = 38
-          Width = 125
+          Width = 119
           Height = 16
-          Caption = #169' 2008 - 2015 JJS'
+          Caption = '? 2008 - 2015 JJS'
           Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -236,9 +240,9 @@ object MainForm: TMainForm
         object OptionsVersionNumber: TLabel
           Left = 23
           Top = 62
-          Width = 47
+          Width = 32
           Height = 16
-          Caption = 'Version'
+          Caption = #29256#26412
           Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -250,11 +254,11 @@ object MainForm: TMainForm
         end
         object AboutVisitHomepage: TLabel
           Left = 23
-          Top = 102
-          Width = 206
+          Top = 94
+          Width = 140
           Height = 13
           Cursor = crHandPoint
-          Caption = 'Visit the PSPdisp homepage @ jjs.at'
+          Caption = #35775#38382'PSPdisp'#20027#39029' @ jjs.at'
           Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -264,6 +268,23 @@ object MainForm: TMainForm
           ParentColor = False
           ParentFont = False
           OnClick = AboutVisitHomepageClick
+        end
+        object Label60: TLabel
+          Left = 23
+          Top = 110
+          Width = 138
+          Height = 13
+          Cursor = crHandPoint
+          Caption = #32763#35793#65306'bilibili@'#21487#21463#30340#29482#28789
+          Color = clBtnFace
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Verdana'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+          OnClick = AboutTranslatorClick
         end
       end
     end
@@ -275,14 +296,14 @@ object MainForm: TMainForm
         Top = 8
         Width = 441
         Height = 85
-        Caption = 'Show notification on these events'
+        Caption = #24403#21457#29983#20197#19979#20107#20214#26102#36890#30693#25105
         TabOrder = 0
         object OptionsWlanNotifyStart: TCheckBox
           Left = 24
           Top = 26
           Width = 137
           Height = 17
-          Caption = 'Server has been started'
+          Caption = #26381#21153#22120#21551#21160
           Checked = True
           State = cbChecked
           TabOrder = 0
@@ -293,7 +314,7 @@ object MainForm: TMainForm
           Top = 26
           Width = 113
           Height = 17
-          Caption = 'Client connected'
+          Caption = #23458#25143#31471#36830#25509
           Checked = True
           State = cbChecked
           TabOrder = 1
@@ -302,9 +323,9 @@ object MainForm: TMainForm
         object OptionsWlanNotifyDisconnect: TCheckBox
           Left = 24
           Top = 49
-          Width = 113
+          Width = 125
           Height = 17
-          Caption = 'Client disconnected'
+          Caption = #23458#25143#31471#26029#24320#36830#25509
           Checked = True
           State = cbChecked
           TabOrder = 2
@@ -316,7 +337,7 @@ object MainForm: TMainForm
         Top = 172
         Width = 441
         Height = 149
-        Caption = 'IP address'
+        Caption = 'IP '#22320#22336
         TabOrder = 1
         object OptionsWlanAddress: TLabel
           Left = 24
@@ -331,25 +352,24 @@ object MainForm: TMainForm
           Width = 393
           Height = 33
           AutoSize = False
-          Caption = 
-            'When WLAN mode is chosen and PSPdisp enabled, all IP addresses b' +
-            'ound to this PC are shown here.'
+          Caption = #24403#36873#25321' WLAN '#27169#24335#24182#21551#29992' PSPdisp '#26102#65292#32465#23450#21040#27492#35745#31639#26426#30340#25152#26377' IP '#22320#22336#37117#20250#26174#31034#22312#36825#37324#12290
           WordWrap = True
         end
       end
       object GroupBox12: TGroupBox
-        Left = 16
+        Left = 28
         Top = 99
         Width = 441
         Height = 59
-        Caption = 'Password'
+        Caption = #23494#30721
         TabOrder = 2
         object Label58: TLabel
           Left = 24
           Top = 28
-          Width = 118
+          Width = 113
           Height = 13
-          Caption = 'Password (max 32 chars)'
+          AutoSize = False
+          Caption = #23494#30721'('#26368#22810'32'#20010#23383')'
         end
         object OptionsWlanPassword: TEdit
           Left = 160
@@ -365,21 +385,21 @@ object MainForm: TMainForm
           Top = 22
           Width = 91
           Height = 25
-          Caption = 'No password'
+          Caption = #26080#23494#30721
           TabOrder = 1
           OnClick = OptionsWlanNoPasswordClick
         end
       end
     end
     object QualityTab: TTabSheet
-      Caption = 'Quality'
+      Caption = #36136#37327
       ImageIndex = 2
       object GroupBox3: TGroupBox
         Left = 16
         Top = 8
         Width = 441
         Height = 313
-        Caption = 'JPEG compression quality'
+        Caption = 'JPEG '#21387#32553#36136#37327
         TabOrder = 0
         object Label5: TLabel
           Left = 13
@@ -387,45 +407,47 @@ object MainForm: TMainForm
           Width = 404
           Height = 34
           AutoSize = False
-          Caption = 
-            'Quality can be set from 0 to 100. Higher values produce larger f' +
-            'rames which can reduce the frame rate.'
+          Caption = #36136#37327#25968#20540#21487#20197#20174'0'#35774#32622#21040'100'#12290' '#26356#39640#30340#25968#20540#20250#26377#26356#22823#30340#24103#22823#23567#65292#21487#33021#20250#23548#33268#26356#20302#30340#24103#29575#12290
           WordWrap = True
         end
         object Label36: TLabel
           Left = 54
           Top = 145
-          Width = 36
+          Width = 28
           Height = 13
-          Caption = 'Highest'
+          AutoSize = False
+          Caption = #26368#22909
         end
         object Label37: TLabel
           Left = 54
           Top = 172
-          Width = 22
+          Width = 12
           Height = 13
-          Caption = 'High'
+          Caption = #22909
         end
         object Label38: TLabel
           Left = 54
           Top = 199
-          Width = 37
+          Width = 28
           Height = 13
-          Caption = 'Medium'
+          AutoSize = False
+          Caption = #19968#33324
         end
         object Label39: TLabel
           Left = 54
           Top = 226
-          Width = 20
+          Width = 28
           Height = 13
-          Caption = 'Low'
+          AutoSize = False
+          Caption = #24046
         end
         object Label40: TLabel
           Left = 54
           Top = 253
-          Width = 34
+          Width = 28
           Height = 13
-          Caption = 'Lowest'
+          AutoSize = False
+          Caption = #26368#24046
         end
         object Label56: TLabel
           Left = 13
@@ -433,9 +455,7 @@ object MainForm: TMainForm
           Width = 412
           Height = 34
           AutoSize = False
-          Caption = 
-            'Values higher than 95 are usually not beneficial for the image q' +
-            'uality and only unnecessarily increase the frame size.'
+          Caption = #36890#24120#24773#20917#19979#65292#22823#20110'95'#30340#25968#20540#23545#22270#20687#36136#37327#30340#25552#21319#24494#20046#20854#24494#65292#21482#20250#19981#24517#35201#22320#22686#21152#24103#22823#23567#12290
           WordWrap = True
         end
         object OptionsQualityHighest: TEdit
@@ -498,21 +518,21 @@ object MainForm: TMainForm
           Top = 194
           Width = 144
           Height = 25
-          Caption = 'Reset to defaults'
+          Caption = #37325#32622#20026#40664#35748#20540
           TabOrder = 5
           OnClick = OptionsQualityResetClick
         end
       end
     end
     object DelayTab: TTabSheet
-      Caption = 'Update interval'
+      Caption = #26356#26032#38388#38548
       ImageIndex = 3
       object GroupBox4: TGroupBox
         Left = 16
         Top = 8
         Width = 441
         Height = 313
-        Caption = 'Delay between frames'
+        Caption = #24103#24310#36831
         TabOrder = 0
         object Label10: TLabel
           Left = 13
@@ -520,9 +540,7 @@ object MainForm: TMainForm
           Width = 404
           Height = 34
           AutoSize = False
-          Caption = 
-            'If chosen in the '#39'Update Interval'#39' menu, PSPdisp will delay the ' +
-            'display of the next frame. This limits the maximum framerate.'
+          Caption = #22914#26524#22312'"'#26356#26032#38388#38548'"'#33756#21333#20013#36873#25321#20102#27492#36873#39033#65292'PSPdisp '#23558#20250#24310#36831#26174#31034#19979#19968#24103#65292#20174#32780#38480#21046#26368#39640#24103#29575#12290
           WordWrap = True
         end
         object Label32: TLabel
@@ -531,46 +549,48 @@ object MainForm: TMainForm
           Width = 404
           Height = 53
           AutoSize = False
-          Caption = 
-            'Higher delays lead to choppier display with lower fps. Lower del' +
-            'ays will produce a smoother display, but utilize more CPU cycles' +
-            '.'
+          Caption = #36739#39640#30340#24310#36831#20250#23548#33268#24103#29575#38477#20302#65292#36739#20302#30340#24310#36831#20250#25552#21319#24103#29575#12290#21518#32773#20250#21344#29992#26356#22810' CPU '#36164#28304#12290
           WordWrap = True
         end
         object Label41: TLabel
           Left = 54
           Top = 145
-          Width = 39
+          Width = 28
           Height = 13
-          Caption = 'Shortest'
+          AutoSize = False
+          Caption = #26368#23567
         end
         object Label42: TLabel
           Left = 54
           Top = 172
-          Width = 25
+          Width = 12
           Height = 13
-          Caption = 'Short'
+          AutoSize = False
+          Caption = #23567
         end
         object Label43: TLabel
           Left = 54
           Top = 199
-          Width = 37
+          Width = 12
           Height = 13
-          Caption = 'Medium'
+          AutoSize = False
+          Caption = #20013
         end
         object Label44: TLabel
           Left = 54
           Top = 226
-          Width = 24
+          Width = 12
           Height = 13
-          Caption = 'Long'
+          AutoSize = False
+          Caption = #22823
         end
         object Label45: TLabel
           Left = 54
           Top = 253
-          Width = 38
+          Width = 28
           Height = 13
-          Caption = 'Longest'
+          AutoSize = False
+          Caption = #26368#22823
         end
         object Label51: TLabel
           Left = 198
@@ -667,21 +687,21 @@ object MainForm: TMainForm
           Top = 194
           Width = 144
           Height = 25
-          Caption = 'Reset to defaults'
+          Caption = #37325#32622#20026#40664#35748#20540
           TabOrder = 5
           OnClick = OptionsDelayResetClick
         end
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Control'
+      Caption = #25511#21046
       ImageIndex = 4
       object GroupBox5: TGroupBox
         Left = 16
         Top = 208
         Width = 441
         Height = 113
-        Caption = 'Scancode'
+        Caption = #38190#30424#25195#25551#30721'(Scancode)'
         TabOrder = 0
         object Label11: TLabel
           Left = 24
@@ -689,10 +709,7 @@ object MainForm: TMainForm
           Width = 401
           Height = 46
           AutoSize = False
-          Caption = 
-            'Click into the edit field and press a key to view its scancode. ' +
-            'Some keys do not show their scancode here, please refer to the l' +
-            'isting in the help file instead.'
+          Caption = #21333#20987#36755#20837#26694#65292#25353#20219#24847#38190#20197#26597#30475#23427#30340#25195#25551#30721#12290#26576#20123#38190#22312#27492#22788#19981#20250#26174#31034#65292#35831#21442#32771#24110#21161#25991#20214#20013#30340#21015#34920#12290
           WordWrap = True
         end
         object OptionsScancode: TEdit
@@ -709,7 +726,7 @@ object MainForm: TMainForm
         Top = 8
         Width = 441
         Height = 185
-        Caption = 'Edit files'
+        Caption = #32534#36753#25991#20214
         TabOrder = 1
         object Label13: TLabel
           Left = 24
@@ -717,10 +734,7 @@ object MainForm: TMainForm
           Width = 401
           Height = 45
           AutoSize = False
-          Caption = 
-            'To create a new control file, copy over an existing one (like '#39'm' +
-            'ouse.control'#39') and edit this. You can also modify an existing co' +
-            'ntrol scheme.'
+          Caption = #35201#21019#24314#19968#20010#26032#25511#21046#25991#20214#65292#20320#21487#20197#22797#21046#19968#20010#24050#26377#30340#25991#20214' ('#22914'"mouse.control") '#36827#34892#32534#36753#12290#20320#20063#21487#20197#20462#25913#29616#26377#30340#25511#21046#26041#26696#12290
           WordWrap = True
         end
         object OptionsOpenControlFileFolder: TButton
@@ -728,7 +742,7 @@ object MainForm: TMainForm
           Top = 19
           Width = 297
           Height = 25
-          Caption = 'Open control file folder to modify / add control files'
+          Caption = #25171#24320#25511#21046#25991#20214#22841#20197#32534#36753'/'#28155#21152#25511#21046#25991#20214
           TabOrder = 0
           OnClick = OptionsOpenControlFileFolderClick
         end
@@ -737,7 +751,7 @@ object MainForm: TMainForm
           Top = 119
           Width = 297
           Height = 25
-          Caption = 'Refresh control file list'
+          Caption = #21047#26032#25511#21046#25991#20214#21015#34920
           TabOrder = 1
           OnClick = OptionsRefreshControlFileListClick
         end
@@ -746,21 +760,21 @@ object MainForm: TMainForm
           Top = 150
           Width = 297
           Height = 25
-          Caption = 'Reload current control file'
+          Caption = #37325#36733#24403#21069#30340#25511#21046#25991#20214
           TabOrder = 2
           OnClick = OptionsReloadControlFileClick
         end
       end
     end
     object TabSheet3: TTabSheet
-      Caption = 'Sound'
+      Caption = #22768#38899
       ImageIndex = 5
       object GroupBox8: TGroupBox
         Left = 16
         Top = 8
         Width = 441
         Height = 101
-        Caption = 'Audio input device'
+        Caption = #22768#38899#36755#20837#35774#32622
         TabOrder = 0
         object Label4: TLabel
           Left = 24
@@ -768,17 +782,16 @@ object MainForm: TMainForm
           Width = 393
           Height = 27
           AutoSize = False
-          Caption = 
-            'Choose the audio recording device that should be used for captur' +
-            'ing sounds.'
+          Caption = #36873#25321#24212#29992#20110#24405#21046#38899#39057#30340#35774#22791#12290
           WordWrap = True
         end
         object Label27: TLabel
           Left = 24
           Top = 77
-          Width = 117
+          Width = 72
           Height = 13
-          Caption = '* = recommended setting'
+          AutoSize = False
+          Caption = '* = '#25512#33616#35774#32622
         end
         object OptionsAudioDevice: TComboBox
           Left = 24
@@ -786,7 +799,7 @@ object MainForm: TMainForm
           Width = 313
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           TabOrder = 0
         end
         object OptionsSoundRefresh: TButton
@@ -794,7 +807,7 @@ object MainForm: TMainForm
           Top = 50
           Width = 65
           Height = 21
-          Caption = 'Refresh'
+          Caption = #21047#26032
           TabOrder = 1
           OnClick = OptionsSoundRefreshClick
         end
@@ -804,7 +817,7 @@ object MainForm: TMainForm
         Top = 115
         Width = 441
         Height = 206
-        Caption = 'Instructions'
+        Caption = #35828#26126
         TabOrder = 1
         object Label21: TLabel
           Left = 24
@@ -812,9 +825,7 @@ object MainForm: TMainForm
           Width = 401
           Height = 30
           AutoSize = False
-          Caption = 
-            'Choose your main sound card from the list above, then enable '#39'St' +
-            'ereo Mix'#39' or '#39'What you hear'#39' in the recording mixer.'
+          Caption = #20174#19978#38754#30340#21015#34920#20013#36873#25321#24744#30340#20027#22768#21345#65292#28982#21518#22312#24405#38899#28151#38899#22120#20013#21551#29992'"'#31435#20307#22768#28151#38899'"'#25110'"'#24405#21046#20320#30340#22768#38899'"'#12290
           WordWrap = True
         end
         object Label28: TLabel
@@ -824,10 +835,8 @@ object MainForm: TMainForm
           Height = 62
           AutoSize = False
           Caption = 
-            'If possible, enable '#39'Stereo Mix'#39' in the recording settings. Then' +
-            ' refresh the list above and choose the newly enabled input. Othe' +
-            'rwise choose '#39'Software Loopback Device'#39' which (almost) always wo' +
-            'rks.'
+            #22914#26524#21487#33021#65292#35831#22312#24405#38899#35774#32622#20013#21551#29992'"'#31435#20307#22768#28151#38899'"'#65292#28982#21518#21047#26032#19978#38754#30340#21015#34920#24182#36873#25321#26032#21551#29992#30340#36755#20837#12290#21542#21017#65292#36873#25321'"'#36719#20214#22238#29615#35774#22791'"'#65292#36825#20010#36873#39033#24635#26159#26377#25928#30340 +
+            #12290
           WordWrap = True
         end
         object Label29: TLabel
@@ -861,28 +870,29 @@ object MainForm: TMainForm
           Top = 166
           Width = 297
           Height = 25
-          Caption = 'Open recording mixer / recording settings'
+          Caption = #25171#24320#24405#21046#28151#21512#22120' / '#24405#21046#35774#32622
           TabOrder = 0
           OnClick = MenuOpenMixerClick
         end
       end
     end
     object TabSheet4: TTabSheet
-      Caption = 'SideShow'
+      Caption = #20391#36793#26639
       ImageIndex = 6
       object GroupBox9: TGroupBox
         Left = 16
         Top = 172
         Width = 441
         Height = 129
-        Caption = 'JPEG compression quality'
+        Caption = 'JPEG '#21387#32553#36136#37327
         TabOrder = 0
         object Label23: TLabel
-          Left = 41
+          Left = 31
           Top = 79
-          Width = 32
+          Width = 25
           Height = 13
-          Caption = 'Quality'
+          AutoSize = False
+          Caption = #36136#37327
         end
         object Label33: TLabel
           Left = 24
@@ -890,9 +900,7 @@ object MainForm: TMainForm
           Width = 393
           Height = 34
           AutoSize = False
-          Caption = 
-            'SideShow content is mostly static. Therefore a high quality can ' +
-            'be chosen without affecting performance (default = 95).'
+          Caption = #23567#24037#20855#22823#22810#26159#38745#24577#30340#65292#22240#27492#21487#20197#36873#25321#39640#36136#37327#32780#19981#24433#21709#24615#33021#65288#40664#35748#20540#20026'95'#65289#12290
           WordWrap = True
         end
         object OptionsQualitySideShow: TEdit
@@ -910,7 +918,7 @@ object MainForm: TMainForm
         Top = 8
         Width = 441
         Height = 150
-        Caption = 'Gadget cycling'
+        Caption = #26700#38754#23567#24037#20855#65288#36793#26639#65289#36718#25442
         TabOrder = 1
         object Label24: TLabel
           Left = 24
@@ -918,10 +926,7 @@ object MainForm: TMainForm
           Width = 393
           Height = 43
           AutoSize = False
-          Caption = 
-            'Interval in which the gadgets are automatically cycled. You can ' +
-            'also set the direction in which the next gadget to display is ch' +
-            'osen.'
+          Caption = #26700#38754#23567#24037#20855#33258#21160#36718#25442#30340#38388#38548#12290#24744#36824#21487#20197#35774#32622#19979#19968#20010#35201#26174#31034#30340#23567#24037#20855#30340#26041#21521#12290#65288#20165' Windows Vista'#12289'Windows 7'#65289
           WordWrap = True
         end
         object Label25: TLabel
@@ -929,14 +934,16 @@ object MainForm: TMainForm
           Top = 77
           Width = 35
           Height = 13
-          Caption = 'Interval'
+          AutoSize = False
+          Caption = #38388#38548
         end
         object Label26: TLabel
           Left = 31
           Top = 104
-          Width = 42
+          Width = 34
           Height = 13
-          Caption = 'Direction'
+          AutoSize = False
+          Caption = #26041#21521
         end
         object OptionsSideShowInterval: TEdit
           Left = 97
@@ -953,19 +960,21 @@ object MainForm: TMainForm
           Width = 103
           Height = 21
           Style = csDropDownList
+          BiDiMode = bdLeftToRight
           ItemHeight = 13
           ItemIndex = 1
+          ParentBiDiMode = False
           TabOrder = 1
-          Text = 'Right'
+          Text = #21491
           OnChange = OnModificationForConfig
           Items.Strings = (
-            'Left'
-            'Right')
+            #24038
+            #21491)
         end
       end
     end
     object TabSheet5: TTabSheet
-      Caption = 'Display'
+      Caption = #26174#31034
       ImageIndex = 7
       object DisplayPaintBox: TPaintBox
         Left = 16
@@ -981,7 +990,7 @@ object MainForm: TMainForm
         Top = 199
         Width = 441
         Height = 128
-        Caption = 'PSPdisp extended display position'
+        Caption = 'PSPdisp '#25193#23637#26174#31034#23631#20301#32622
         TabOrder = 0
         object Label59: TLabel
           Left = 24
@@ -990,10 +999,8 @@ object MainForm: TMainForm
           Height = 49
           AutoSize = False
           Caption = 
-            'In Vista and 7 the position of the extended screen can only be c' +
-            'hanged here, not in the regular display properties. In the graph' +
-            'ic above, the white box represents the PSPdisp display and the g' +
-            'rey boxes your other displays.'
+            #22312'Vista'#21644'7'#20013#65292#25193#23637#23631#24149#30340#20301#32622#21482#33021#22312#27492#22788#26356#25913#65292#32780#19981#33021#22312#24120#35268#26174#31034#23646#24615#20013#26356#25913#12290#22312#19978#38754#30340#30028#38754#20013#65292#30333#33394#26041#26694#34920#31034'PSPdisp'#23631#24149#65292#28784 +
+            #33394#26041#26694#34920#31034#20854#20182#23631#24149#12290#65288#22312#26356#26032#30340#25805#20316#31995#32479#20013#19981#21487#29992#65289
           WordWrap = True
         end
         object Label31: TLabel
@@ -1031,21 +1038,21 @@ object MainForm: TMainForm
           Top = 86
           Width = 129
           Height = 25
-          Caption = 'Apply'
+          Caption = #24212#29992
           TabOrder = 2
           OnClick = OptionsDisplayApplySettingsClick
         end
       end
     end
     object TabSheet6: TTabSheet
-      Caption = 'Presets'
+      Caption = #39044#35774
       ImageIndex = 8
       object GroupBox14: TGroupBox
         Left = 16
         Top = 8
         Width = 441
         Height = 313
-        Caption = 'Preset files'
+        Caption = #39044#35774#25991#20214
         TabOrder = 0
         object Label35: TLabel
           Left = 13
@@ -1054,10 +1061,8 @@ object MainForm: TMainForm
           Height = 66
           AutoSize = False
           Caption = 
-            'Various capturing settings can be saved to preset files to make ' +
-            'switching between different use cases easier. You could e.g. hav' +
-            'e a preset for desktop remote control and another one for high q' +
-            'uality audio streaming.'
+            #21487#20197#23558#24403#21069#30340#25152#26377#35774#32622#20445#23384#21040#39044#35774#25991#20214#20013#65292#20197#20415#36731#26494#22320#22312#19981#21516#22330#26223#20043#38388#20999#25442#12290#20363#22914#65306#20320#21487#20197#20026#36828#31243#26700#38754#25511#21046#35774#32622#19968#20010#39044#35774#65292#20026#39640#36136#37327#38899#39057#27969#35774#32622#21478 +
+            #19968#20010#39044#35774#12290
           WordWrap = True
         end
         object OptionsPresetsList: TListBox
@@ -1075,7 +1080,7 @@ object MainForm: TMainForm
           Top = 81
           Width = 127
           Height = 25
-          Caption = 'Save preset'
+          Caption = #20445#23384#39044#35774
           TabOrder = 1
           OnClick = OptionsPresetsSaveClick
         end
@@ -1084,7 +1089,7 @@ object MainForm: TMainForm
           Top = 271
           Width = 127
           Height = 25
-          Caption = 'Delete preset'
+          Caption = #21024#38500#39044#35774
           Enabled = False
           TabOrder = 2
           OnClick = OptionsPresetsDeleteClick
@@ -1094,7 +1099,7 @@ object MainForm: TMainForm
           Top = 179
           Width = 127
           Height = 25
-          Caption = 'Refresh list'
+          Caption = #21047#26032#21015#34920
           TabOrder = 3
           OnClick = OptionsPresetsRefreshClick
         end
@@ -1110,7 +1115,7 @@ object MainForm: TMainForm
           Top = 125
           Width = 127
           Height = 25
-          Caption = 'Load preset'
+          Caption = #21152#36733#39044#35774
           Enabled = False
           TabOrder = 5
           OnClick = OptionsPresetsLoadClick
@@ -1120,7 +1125,7 @@ object MainForm: TMainForm
           Top = 210
           Width = 127
           Height = 25
-          Caption = 'Open preset folder'
+          Caption = #25171#24320#39044#35774#25991#20214#22841
           TabOrder = 6
           OnClick = OptionsPresetsOpenFolderClick
         end
@@ -1132,7 +1137,7 @@ object MainForm: TMainForm
     Top = 375
     Width = 75
     Height = 25
-    Caption = 'Close'
+    Caption = #20851#38381
     TabOrder = 1
     OnClick = SettingsCloseClick
   end
@@ -1141,11 +1146,11 @@ object MainForm: TMainForm
     Top = 374
     object MenuAbout: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'About PSPdisp...'
+      Caption = #20851#20110' PSPdisp...'
       OnClick = MenuAboutClick
     end
     object MenuHelp: TMenuItem
-      Caption = 'Help file...'
+      Caption = #24110#21161#25991#20214'...'
       OnClick = MenuHelpClick
     end
     object N6: TMenuItem
@@ -1155,44 +1160,44 @@ object MainForm: TMainForm
     object MenuPresets: TMenuItem
       AutoHotkeys = maManual
       AutoLineReduction = maManual
-      Caption = 'Presets'
+      Caption = #39044#35774
       GroupIndex = 20
       object N17: TMenuItem
         Caption = '-'
       end
       object MenuEditPresets: TMenuItem
-        Caption = 'Edit presets...'
+        Caption = #32534#36753#39044#35774'...'
         OnClick = MenuEditPresetsClick
       end
     end
     object MenuOptions: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Options'
+      Caption = #36873#39033
       GroupIndex = 20
       object MenuUseCaptureBlt: TMenuItem
-        Caption = 'Grab transparent windows'
+        Caption = #25235#21462#36879#26126#31383#21475
         GroupIndex = 20
         OnClick = MenuUseCaptureBltClick
       end
       object MenuFastImageStretching: TMenuItem
         AutoCheck = True
-        Caption = 'Fast image stretching'
+        Caption = #24555#36895#22270#20687#25289#20280
         GroupIndex = 20
         OnClick = MenuFastImageStretchingClick
       end
       object MenuReduceCpuLoad: TMenuItem
-        Caption = 'Reduce CPU load on idle'
+        Caption = #20943#23569#31354#38386#26102' CPU '#36127#36733
         GroupIndex = 20
         OnClick = MenuReduceCpuLoadClick
       end
       object MenuCycleSideShowGadgets: TMenuItem
-        Caption = 'Cycle SideShow gadgets'
+        Caption = #24490#29615#20391#26639#23567#24037#20855
         GroupIndex = 20
         OnClick = MenuCycleSideShowGadgetsClick
       end
       object MenuHigherPriority: TMenuItem
         AutoCheck = True
-        Caption = 'Higher process priority'
+        Caption = #26356#39640#30340#36827#31243#20248#20808#32423
         GroupIndex = 20
         OnClick = MenuHigherPriorityClick
       end
@@ -1202,13 +1207,13 @@ object MainForm: TMainForm
       end
       object MenuHideCurser: TMenuItem
         AutoCheck = True
-        Caption = 'Automatically hide mouse cursor'
+        Caption = #33258#21160#38544#34255#40736#26631#25351#38024
         GroupIndex = 20
         OnClick = OnModificationForConfig
       end
       object MenuScaleCursor: TMenuItem
         AutoCheck = True
-        Caption = 'Scale mouse cursor'
+        Caption = #32553#25918#40736#26631#25351#38024
         GroupIndex = 20
         OnClick = MenuScaleCursorClick
       end
@@ -1217,7 +1222,7 @@ object MainForm: TMainForm
         GroupIndex = 20
       end
       object MenuMoreOptions: TMenuItem
-        Caption = 'Set server message options...'
+        Caption = #26381#21153#22120#20449#24687#36873#39033'...'
         GroupIndex = 20
         OnClick = MenuMoreOptionsClick
       end
@@ -1225,11 +1230,11 @@ object MainForm: TMainForm
     object MenuControl: TMenuItem
       AutoHotkeys = maManual
       AutoLineReduction = maManual
-      Caption = 'Control'
+      Caption = #25511#21046
       GroupIndex = 20
       object MenuControlEnabled: TMenuItem
         AutoCheck = True
-        Caption = 'Enabled'
+        Caption = #21551#29992
         Visible = False
       end
       object N9: TMenuItem
@@ -1238,7 +1243,7 @@ object MainForm: TMainForm
       end
       object MenuControlOff: TMenuItem
         Tag = -1
-        Caption = 'Off'
+        Caption = #20851#38381
         Checked = True
         GroupIndex = 101
         RadioItem = True
@@ -1249,19 +1254,19 @@ object MainForm: TMainForm
         GroupIndex = 101
       end
       object MenuControlCustomize: TMenuItem
-        Caption = 'Customize...'
+        Caption = #35843#25972'...'
         GroupIndex = 101
         OnClick = MenuControlCustomizeClick
       end
     end
     object Sound1: TMenuItem
-      Caption = 'Sound'
+      Caption = #22768#38899
       GroupIndex = 20
       object N18: TMenuItem
         Caption = '-'
       end
       object menuSoundWlan: TMenuItem
-        Caption = 'Sample rate in WLAN mode '
+        Caption = 'WLAN '#27169#24335#19979#30340#37319#26679#29575
         object MenuSoundWlan11: TMenuItem
           Caption = '11025 Hz'
           Checked = True
@@ -1283,7 +1288,7 @@ object MainForm: TMainForm
         end
       end
       object menuSoundUsb: TMenuItem
-        Caption = 'Sample rate in USB mode'
+        Caption = 'USB '#27169#24335#19979#30340#37319#26679#29575
         object MenuSoundUsb11: TMenuItem
           Caption = '11025 Hz'
           GroupIndex = 222
@@ -1308,34 +1313,34 @@ object MainForm: TMainForm
         Caption = '-'
       end
       object MenuOpenMixer: TMenuItem
-        Caption = 'Mixer control panel...'
+        Caption = #28151#21512#22120#25511#21046#38754#26495'...'
         OnClick = MenuOpenMixerClick
       end
       object Chooseinputdevice1: TMenuItem
-        Caption = 'Choose input device...'
+        Caption = #36873#25321#36755#20837#35774#22791'...'
         OnClick = Chooseinputdevice1Click
       end
     end
     object MenuConnection: TMenuItem
-      Caption = 'Connection'
+      Caption = #36830#25509
       GroupIndex = 20
       object MenuUseUSB: TMenuItem
         AutoCheck = True
-        Caption = 'Use only USB'
+        Caption = #20165'USB'
         GroupIndex = 20
         RadioItem = True
         OnClick = MenuUseWirelessLANClick
       end
       object MenuUseWirelessLAN: TMenuItem
         AutoCheck = True
-        Caption = 'Use only Wireless LAN'
+        Caption = #20165#26080#32447#23616#22495#32593
         GroupIndex = 20
         RadioItem = True
         OnClick = MenuUseWirelessLANClick
       end
       object MenuUseBoth: TMenuItem
         AutoCheck = True
-        Caption = 'Use USB and Wireless LAN'
+        Caption = #21516#26102#20351#29992'USB'#21644#26080#32447#23616#22495#32593
         Checked = True
         GroupIndex = 20
         RadioItem = True
@@ -1346,22 +1351,22 @@ object MainForm: TMainForm
         GroupIndex = 20
       end
       object MenuEnableOnStartup: TMenuItem
-        Caption = 'Enable on startup'
+        Caption = #31243#24207#21551#21160#26102#24320#21551
         Checked = True
         GroupIndex = 21
         OnClick = MenuEnableOnStartupClick
       end
     end
     object MenuStreaming: TMenuItem
-      Caption = 'Streaming'
+      Caption = #20018#27969
       GroupIndex = 20
       object MenuSoundEnabled: TMenuItem
-        Caption = 'Enable sound streaming'
+        Caption = #21551#29992#22768#38899#20018#27969
         OnClick = MenuSoundEnabledClick
       end
       object MenuEnableImageStreaming: TMenuItem
         AutoCheck = True
-        Caption = 'Enable video streaming'
+        Caption = #21551#29992#35270#39057#20018#27969
         Checked = True
         GroupIndex = 20
         OnClick = MenuEnableImageStreamingClick
@@ -1373,10 +1378,10 @@ object MainForm: TMainForm
     end
     object MenuUpdate: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Update interval'
+      Caption = #26356#26032#38388#38548
       GroupIndex = 20
       object MenuUpdateContinuous: TMenuItem
-        Caption = 'Continuous'
+        Caption = #36830#32493#30340
         Checked = True
         GroupIndex = 3
         RadioItem = True
@@ -1385,7 +1390,7 @@ object MainForm: TMainForm
       object MenuUpdateSleep1: TMenuItem
         Tag = 30
         AutoCheck = True
-        Caption = 'Sleep 30 ms'
+        Caption = #38388#38548' 30 ms'
         GroupIndex = 3
         RadioItem = True
         OnClick = MenuUpdateClick
@@ -1393,7 +1398,7 @@ object MainForm: TMainForm
       object MenuUpdateSleep2: TMenuItem
         Tag = 40
         AutoCheck = True
-        Caption = 'Sleep 40 ms'
+        Caption = #38388#38548' 40 ms'
         GroupIndex = 3
         RadioItem = True
         OnClick = MenuUpdateClick
@@ -1401,7 +1406,7 @@ object MainForm: TMainForm
       object MenuUpdateSleep3: TMenuItem
         Tag = 50
         AutoCheck = True
-        Caption = 'Sleep 50 ms'
+        Caption = #38388#38548' 50 ms'
         GroupIndex = 3
         RadioItem = True
         OnClick = MenuUpdateClick
@@ -1409,7 +1414,7 @@ object MainForm: TMainForm
       object MenuUpdateSleep4: TMenuItem
         Tag = 100
         AutoCheck = True
-        Caption = 'Sleep 100 ms'
+        Caption = #38388#38548' 100 ms'
         GroupIndex = 3
         RadioItem = True
         OnClick = MenuUpdateClick
@@ -1417,7 +1422,7 @@ object MainForm: TMainForm
       object MenuUpdateSleep5: TMenuItem
         Tag = 200
         AutoCheck = True
-        Caption = 'Sleep 200 ms'
+        Caption = #38388#38548' 200 ms'
         GroupIndex = 3
         RadioItem = True
         OnClick = MenuUpdateClick
@@ -1427,18 +1432,18 @@ object MainForm: TMainForm
         GroupIndex = 3
       end
       object MenuDelayCustomize: TMenuItem
-        Caption = 'Customize...'
+        Caption = #35843#25972'...'
         GroupIndex = 3
         OnClick = MenuDelayCustomizeClick
       end
     end
     object MenuQuality: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Quality'
+      Caption = #36136#37327
       GroupIndex = 20
       object MenuQualityUncompressed: TMenuItem
         AutoCheck = True
-        Caption = 'Uncompressed'
+        Caption = #26080#21387#32553
         Checked = True
         GroupIndex = 2
         OnClick = OnModificationForConfig
@@ -1449,21 +1454,21 @@ object MainForm: TMainForm
       end
       object MenuQualityHighest: TMenuItem
         Tag = 80
-        Caption = 'Highest'
+        Caption = #26368#22909
         GroupIndex = 2
         RadioItem = True
         OnClick = MenuQualityClick
       end
       object MenuQualityHigh: TMenuItem
         Tag = 50
-        Caption = 'High'
+        Caption = #22909
         GroupIndex = 2
         RadioItem = True
         OnClick = MenuQualityClick
       end
       object MenuQualityMedium: TMenuItem
         Tag = 30
-        Caption = 'Medium'
+        Caption = #20013
         Checked = True
         GroupIndex = 2
         RadioItem = True
@@ -1471,21 +1476,21 @@ object MainForm: TMainForm
       end
       object MenuQualityLow: TMenuItem
         Tag = 20
-        Caption = 'Low'
+        Caption = #24046
         GroupIndex = 2
         RadioItem = True
         OnClick = MenuQualityClick
       end
       object MenuQualityLowest: TMenuItem
         Tag = 10
-        Caption = 'Lowest'
+        Caption = #26368#24046
         GroupIndex = 2
         RadioItem = True
         OnClick = MenuQualityClick
       end
       object MenuQualitySideShow: TMenuItem
         Tag = 95
-        Caption = 'SideShow'
+        Caption = #20391#36793#26639
         GroupIndex = 2
         Visible = False
       end
@@ -1494,16 +1499,16 @@ object MainForm: TMainForm
         GroupIndex = 2
       end
       object MenuQualityCustomize: TMenuItem
-        Caption = 'Customize...'
+        Caption = #35843#25972'...'
         GroupIndex = 2
         OnClick = MenuQualityCustomizeClick
       end
     end
     object MenuRotation: TMenuItem
-      Caption = 'Rotation'
+      Caption = #26059#36716
       GroupIndex = 20
       object MenuRotationOff: TMenuItem
-        Caption = 'Off'
+        Caption = #20851
         GroupIndex = 201
         RadioItem = True
         OnClick = MenuRotationOffClick
@@ -1528,7 +1533,7 @@ object MainForm: TMainForm
       end
     end
     object MenuViewportSize: TMenuItem
-      Caption = 'Viewport size'
+      Caption = #20998#36776#29575
       GroupIndex = 20
       object N480x2721: TMenuItem
         Caption = '480x272'
@@ -1632,34 +1637,34 @@ object MainForm: TMainForm
     end
     object MenuScreen: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Screen mode'
+      Caption = #23631#24149#27169#24335
       GroupIndex = 20
       object MenuFitScreen: TMenuItem
-        Caption = 'Fit screen'
+        Caption = #36866#24212#23631#24149
         GroupIndex = 5
         RadioItem = True
         OnClick = MenuScreenClick
       end
       object MenuFitScreen16to9: TMenuItem
-        Caption = 'Fit screen (crop to 16:9)'
+        Caption = #36866#24212#23631#24149' ('#35009#21098#20026' 16:9)'
         GroupIndex = 5
         RadioItem = True
         OnClick = MenuScreenClick
       end
       object MenuFollowMouse: TMenuItem
-        Caption = 'Follow mouse (mode 1)'
+        Caption = #36319#36394#40736#26631' ('#27169#24335' 1)'
         GroupIndex = 5
         RadioItem = True
         OnClick = MenuScreenClick
       end
       object MenuFollowMouse2: TMenuItem
-        Caption = 'Follow mouse (mode 2)'
+        Caption = #36319#36394#40736#26631' ('#27169#24335' 2)'
         GroupIndex = 5
         RadioItem = True
         OnClick = MenuScreenClick
       end
       object MenuStaticViewport: TMenuItem
-        Caption = 'Static viewport'
+        Caption = #22266#23450#35270#21475
         GroupIndex = 5
         RadioItem = True
         OnClick = MenuScreenClick
@@ -1669,23 +1674,23 @@ object MainForm: TMainForm
         GroupIndex = 5
       end
       object MenuSetOrigin: TMenuItem
-        Caption = 'Set screen origin'
+        Caption = #35774#32622#30011#38754#21407#28857
         GroupIndex = 5
         OnClick = MenuSetOriginClick
       end
       object MenuResetOrigin: TMenuItem
-        Caption = 'Reset origin to (0,0)'
+        Caption = #37325#32622#21407#28857#20026' (0,0)'
         GroupIndex = 5
         OnClick = MenuResetOriginClick
       end
     end
     object MenuDisplay: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Display device'
+      Caption = #26174#31034#35774#22791
       GroupIndex = 20
       object MenuDesktopProperties: TMenuItem
         AutoLineReduction = maManual
-        Caption = 'Display properties...'
+        Caption = #26174#31034#23646#24615'...'
         GroupIndex = 20
         OnClick = MenuDesktopPropertiesClick
       end
@@ -1696,20 +1701,20 @@ object MainForm: TMainForm
       end
       object MenuEnableDisplay: TMenuItem
         AutoLineReduction = maManual
-        Caption = 'Enable PSPdisp display driver'
+        Caption = #21551#29992' PSPdisp '#26174#31034#39537#21160
         GroupIndex = 20
         OnClick = MenuEnableDisplayClick
       end
       object MenuResolution: TMenuItem
-        Caption = 'Change resolution (landscape)'
+        Caption = #26356#25913#26174#31034#26041#21521' ('#27178#21521')'
         GroupIndex = 20
       end
       object MenuResolutionRotated: TMenuItem
-        Caption = 'Change resolution (portrait)'
+        Caption = #26356#25913#26174#31034#26041#21521' ('#32437#21521')'
         GroupIndex = 20
       end
       object MenuDisplayChangePosition: TMenuItem
-        Caption = 'Change position...'
+        Caption = #26356#25913#26174#31034#26041#21521'...'
         GroupIndex = 20
         OnClick = MenuDisplayChangePositionClick
       end
@@ -1719,12 +1724,12 @@ object MainForm: TMainForm
         GroupIndex = 20
       end
       object MenuUseSideshow: TMenuItem
-        Caption = 'Use SideShow device'
+        Caption = #20351#29992#20391#36793#26639#35774#22791
         GroupIndex = 20
         OnClick = MenuUseSideshowClick
       end
       object MenuSideshowProperties: TMenuItem
-        Caption = 'SideShow properties...'
+        Caption = #20391#36793#26639#23646#24615'...'
         GroupIndex = 20
         OnClick = MenuSideshowPropertiesClick
       end
@@ -1733,7 +1738,7 @@ object MainForm: TMainForm
         GroupIndex = 20
       end
       object MenuFollowMouseAcrossScreens: TMenuItem
-        Caption = 'Autoselect display with mouse cursor'
+        Caption = #20351#29992#40736#26631#20809#26631#36873#25321#26174#31034#22120
         GroupIndex = 20
         OnClick = MenuFollowMouseAcrossScreensClick
       end
@@ -1745,7 +1750,7 @@ object MainForm: TMainForm
     end
     object MenuEnabled: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Enabled'
+      Caption = #21551#29992
       Default = True
       GroupIndex = 20
       OnClick = MenuEnabledClick
@@ -1757,7 +1762,7 @@ object MainForm: TMainForm
     end
     object MenuExit: TMenuItem
       AutoLineReduction = maManual
-      Caption = 'Exit'
+      Caption = #36864#20986
       GroupIndex = 20
       OnClick = MenuExitClick
     end

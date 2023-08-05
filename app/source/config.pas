@@ -154,11 +154,11 @@ begin
       MenuUpdateSleep3.Tag := ConfigFile.ReadInteger('Delay Options', 'Medium', MenuUpdateSleep3.Tag);
       MenuUpdateSleep4.Tag := ConfigFile.ReadInteger('Delay Options', 'Long', MenuUpdateSleep4.Tag);
       MenuUpdateSleep5.Tag := ConfigFile.ReadInteger('Delay Options', 'Longest', MenuUpdateSleep5.Tag);
-      MenuUpdateSleep1.Caption := 'Min. ' + IntToStr(MenuUpdateSleep1.Tag) + ' ms per frame';
-      MenuUpdateSleep2.Caption := 'Min. ' + IntToStr(MenuUpdateSleep2.Tag) + ' ms per frame';
-      MenuUpdateSleep3.Caption := 'Min. ' + IntToStr(MenuUpdateSleep3.Tag) + ' ms per frame';
-      MenuUpdateSleep4.Caption := 'Min. ' + IntToStr(MenuUpdateSleep4.Tag) + ' ms per frame';
-      MenuUpdateSleep5.Caption := 'Min. ' + IntToStr(MenuUpdateSleep5.Tag) + ' ms per frame';
+      MenuUpdateSleep1.Caption := #26368#23569' ' + IntToStr(MenuUpdateSleep1.Tag) + ' ms '#27599#24103;
+      MenuUpdateSleep2.Caption := #26368#23569' ' + IntToStr(MenuUpdateSleep2.Tag) + ' ms '#27599#24103;
+      MenuUpdateSleep3.Caption := #26368#23569' ' + IntToStr(MenuUpdateSleep3.Tag) + ' ms '#27599#24103;
+      MenuUpdateSleep4.Caption := #26368#23569' ' + IntToStr(MenuUpdateSleep4.Tag) + ' ms '#27599#24103;
+      MenuUpdateSleep5.Caption := #26368#23569' ' + IntToStr(MenuUpdateSleep5.Tag) + ' ms '#27599#24103;
 
       OptionsQualityHighest.Text := IntToStr(MenuQualityHighest.Tag);
       OptionsQualityHigh.Text := IntToStr(MenuQualityHigh.Tag);

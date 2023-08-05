@@ -292,7 +292,7 @@ begin
     if (fQuotes and(fText[vI]=fSep)and vOn)or(Not(fQuotes) and (fText[vI]=fSep)) then 
     begin 
       if fTrim then vBuffer:=Trim(vBuffer); 
-      if vBuffer='' then vBuffer:=fSep; // !!! sonst läuft z.B. split(',**',',') auf einen Hammer... 
+      if vBuffer='' then vBuffer:=fSep; // !!! sonst lï¿½uft z.B. split(',**',',') auf einen Hammer... 
       if vBuffer[1]=fSep then 
         vBuffer:=Copy(vBuffer,2,Length(vBuffer)); 
       SetLength(Result, Length(Result) + 1);

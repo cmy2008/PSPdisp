@@ -72,7 +72,7 @@ begin
 
   if (bind(SocketHandle, SockAddr, sizeof(SockAddr)) = SOCKET_ERROR) then
   begin
-    MessageDlg('The port used by the PSPdisp server is in use. Probably another instance is already running.', mtError, [mbOK], -1);
+    MessageDlg('PSPdisp '#26381#21153#22120#20351#29992#30340#31471#21475#24050#34987#21344#65292#21487#33021#21478#19968#20010#23454#20363#22312#36816#34892#12290, mtError, [mbOK], -1);
     //MessageDlg('bind() failed!', mtError, [mbOK], -1);
     Exit;
   end;
@@ -93,7 +93,7 @@ begin
   MainForm.OptionsWlanAddress.Caption := Ips;
 
   if MainForm.OptionsWlanNotifyStart.Checked then
-    MainForm.ShowBalloonHint('PSPdisp: Server started', 'Please connect your PSP to the following IP address:' + #10 + Ips, bfInfo);
+    MainForm.ShowBalloonHint('PSPdisp: '#26381#21153#22120#24050#21551#21160, #26381#21153#22120#24050#21551#21160' IP '#22320#22336#20197#36830#25509#21040#26381#21153#22120 + #10 + Ips, bfInfo);
 
   Result := True;
 end;
@@ -133,12 +133,12 @@ begin
     if Result = '' then
       Result := tempString
     else
-      Result := Result + ' or' + #10 + tempString;
+      Result := Result + ' '#25110 + #10 + tempString;
     Inc(I);
   end;
 
   if (Result = '127.0.0.1') then
-    Result := 'No local IP found. You may not be able to use the Wireless LAN mode.';
+    Result := #26410#25214#21040#26412#22320' IP '#22320#22336#65292#24744#21487#33021#26080#27861#20351#29992#32447#23616#22495#32593#27169#24335#12290;
 end;
 
 
@@ -309,11 +309,11 @@ begin
       begin
         Result := True;
         if MainForm.OptionsWlanNotifyConnect.Checked then
-          MainForm.ShowBalloonHint('PSPdisp: New client connected', 'A PSP client has connected to the PSPdisp server.', bfInfo);
+          MainForm.ShowBalloonHint('PSPdisp: '#26032#23458#25143#31471#36830#25509, #19968#20010' PSP '#23458#25143#31471#24050#36830#25509#21040' PSPdisp '#26381#21153#22120, bfInfo);
       end
       else begin
         // Show failed connection regardless of notification setting
-        MainForm.ShowBalloonHint('PSPdisp: Warning', 'A connection attempt occured. It was rejected because of an incorrect password.', bfWarning);
+        MainForm.ShowBalloonHint('PSPdisp: '#35686#21578, #19968#20010#35774#22791#23581#35797#36830#25509#65292#30001#20110#23494#30721#19981#27491#30830#24050#34987#25298#32477, bfWarning);
         WlanCloseClient();
         Sleep(5000);
       end;
