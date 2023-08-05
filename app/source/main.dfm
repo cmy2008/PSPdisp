@@ -275,7 +275,7 @@ object MainForm: TMainForm
           Width = 138
           Height = 13
           Cursor = crHandPoint
-          Caption = #32763#35793#65306'bilibili@'#21487#21463#30340#29482#28789
+          Caption = #32763#35793#65306#21487#21463#30340#29482#28789'@bilibili'
           Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack

@@ -11,3 +11,4 @@ Contact: visit www.jjs.at or send an email to software@jjs.at.
 
 
 
+中文翻译：可受的猪灵@bilibili
