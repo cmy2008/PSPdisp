@@ -122,7 +122,7 @@ object MainForm: TMainForm
     Top = 8
     Width = 480
     Height = 361
-    ActivePage = WlanTab
+    ActivePage = TabSheet4
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = #20851#20110
@@ -799,7 +799,7 @@ object MainForm: TMainForm
           Width = 313
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           TabOrder = 0
         end
         object OptionsSoundRefresh: TButton
@@ -877,7 +877,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet4: TTabSheet
-      Caption = #20391#36793#26639
+      Caption = 'SideShow'
       ImageIndex = 6
       object GroupBox9: TGroupBox
         Left = 16
@@ -918,7 +918,7 @@ object MainForm: TMainForm
         Top = 8
         Width = 441
         Height = 150
-        Caption = #26700#38754#23567#24037#20855#65288#36793#26639#65289#36718#25442
+        Caption = #26700#38754#23567#24037#20855#36718#25442
         TabOrder = 1
         object Label24: TLabel
           Left = 24
@@ -926,7 +926,9 @@ object MainForm: TMainForm
           Width = 393
           Height = 43
           AutoSize = False
-          Caption = #26700#38754#23567#24037#20855#33258#21160#36718#25442#30340#38388#38548#12290#24744#36824#21487#20197#35774#32622#19979#19968#20010#35201#26174#31034#30340#23567#24037#20855#30340#26041#21521#12290#65288#20165' Windows Vista'#12289'Windows 7'#65289
+          Caption = 
+            #26700#38754#23567#24037#20855#33258#21160#36718#25442#30340#38388#38548#12290#24744#36824#21487#20197#35774#32622#19979#19968#20010#35201#26174#31034#30340#23567#24037#20855#30340#26041#21521#12290#65288#20165#22312' Windows Vista/7 '#19988#26377' SideShow' +
+            ' '#30340#35774#22791#19978#65289
           WordWrap = True
         end
         object Label25: TLabel
@@ -1724,12 +1726,12 @@ object MainForm: TMainForm
         GroupIndex = 20
       end
       object MenuUseSideshow: TMenuItem
-        Caption = #20351#29992#20391#36793#26639#35774#22791
+        Caption = #20351#29992' SideShow '#35774#22791
         GroupIndex = 20
         OnClick = MenuUseSideshowClick
       end
       object MenuSideshowProperties: TMenuItem
-        Caption = #20391#36793#26639#23646#24615'...'
+        Caption = 'SideShow '#23646#24615'...'
         GroupIndex = 20
         OnClick = MenuSideshowPropertiesClick
       end
